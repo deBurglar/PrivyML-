@@ -107,3 +107,33 @@ With these optimized parameters, the model shows improved balance and generaliza
 
 ---
 
+Here’s a **very short report** you can use in your `README.md` under a section like **Decision Tree Tuning Summary**:
+
+---
+
+## 🌳 Decision Tree - Hyperparameter Tuning Summary
+
+We tuned a Decision Tree classifier using cross-validation to find the best-performing configuration.
+
+### ✅ Best Parameters:
+
+```json
+{
+  "class_weight": null,
+  "criterion": "gini",
+  "max_depth": 10,
+  "min_samples_split": 5
+}
+```
+
+### 🔍 Parameter Meaning (Layman Terms):
+
+* **criterion = 'gini'**: Chooses the best questions to split the data cleanly.
+* **max\_depth = 10**: Limits the tree to 10 questions deep to avoid overfitting.
+* **min\_samples\_split = 5**: A split is made only if 5 or more samples are present.
+* **class\_weight = None**: No class balancing applied — all classes treated equally.
+
+---
+
+
+
