@@ -36,14 +36,15 @@
 ---
 
 # XGBoost
-Accuracy: 0.9711626487641135
 
-Classification Report:
-               precision    recall  f1-score   support
+### 📊 Classification Report (XGBoost Model)
 
-           0       0.78      0.70      0.74       379
-           1       0.98      0.99      0.98      6175
+| Metric        | Class 0 (Denied) | Class 1 (Approved) | Macro Avg | Weighted Avg |
+|---------------|------------------|--------------------|-----------|---------------|
+| **Precision** | 0.78             | 0.98               | 0.88      | 0.97          |
+| **Recall**    | 0.70             | 0.99               | 0.84      | 0.97          |
+| **F1-score**  | 0.74             | 0.98               | 0.86      | 0.97          |
+| **Support**   | 379              | 6175               | —         | 6554          |
 
-    accuracy                           0.97      6554
-   macro avg       0.88      0.84      0.86      6554
-weighted avg       0.97      0.97      0.97      6554
+**Overall Accuracy**: `0.9711` ✅
+
