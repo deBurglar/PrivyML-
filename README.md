@@ -67,9 +67,6 @@
 
 ---
 
-Here's a concise and clear **short report** you can directly include in your `README.md` under a section like **Model Tuning Report** or **Logistic Regression Optimization**:
-
----
 
 ## 🔧 Logistic Regression - Hyperparameter Tuning Report
 
@@ -107,9 +104,6 @@ With these optimized parameters, the model shows improved balance and generaliza
 
 ---
 
-Here’s a **very short report** you can use in your `README.md` under a section like **Decision Tree Tuning Summary**:
-
----
 
 ## 🌳 Decision Tree - Hyperparameter Tuning Summary
 
