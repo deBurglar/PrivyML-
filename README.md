@@ -47,4 +47,20 @@
 | **Support**   | 379              | 6175               | —         | 6554          |
 
 **Overall Accuracy**: `0.9711` ✅
+---
 
+# Model Comparison
+
+| Model                              | Class 0 Recall | Class 0 Precision | Accuracy  |
+| ---------------------------------- | -------------- | ----------------- | --------- |
+| Logistic Regression *(no weights)* | 0.29           | 0.63              | 94.9%     |
+| Logistic Regression *(balanced)*   | 0.89           | 0.38              | 90.8%     |
+| Decision Tree                      | 0.66           | 0.66              | 96.0%     |
+| **XGBoost**                        | **0.70**       | **0.78**          | **97.1%** |
+
+### 🧠 Key Insights:
+- XGBoost achieved the best balance between precision and recall for the minority class, with the highest overall accuracy.
+
+- The balanced Logistic Regression boosted recall significantly but at the cost of precision.
+
+- Decision Tree offered a good trade-off, performing decently across all metrics with simpler interpretability.
