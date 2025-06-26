@@ -64,3 +64,46 @@
 - The balanced Logistic Regression boosted recall significantly but at the cost of precision.
 
 - Decision Tree offered a good trade-off, performing decently across all metrics with simpler interpretability.
+
+---
+
+Here's a concise and clear **short report** you can directly include in your `README.md` under a section like **Model Tuning Report** or **Logistic Regression Optimization**:
+
+---
+
+## 🔧 Logistic Regression - Hyperparameter Tuning Report
+
+We performed hyperparameter tuning on the Logistic Regression model to improve its performance on our classification task. The tuning was done using GridSearchCV with cross-validation.
+
+### ✅ Best Parameters Found:
+
+```json
+{
+  "C": 1,
+  "class_weight": "balanced",
+  "penalty": "l2",
+  "solver": "lbfgs"
+}
+```
+
+### 📈 Best Cross-Validation Score:
+
+```
+0.7443 (approx. 74.43% average accuracy)
+```
+
+### 🔍 Explanation of Parameters:
+
+* **C = 1**: Controls regularization strength; a balanced value that prevents overfitting.
+* **class\_weight = 'balanced'**: Automatically adjusts weights inversely proportional to class frequencies to handle class imbalance.
+* **penalty = 'l2'**: Applies L2 regularization to simplify the model and prevent overfitting.
+* **solver = 'lbfgs'**: An efficient optimization algorithm suited for small to medium-sized datasets and supports L2 penalty.
+
+---
+
+### 📝 Conclusion:
+
+With these optimized parameters, the model shows improved balance and generalization, especially helpful for imbalanced datasets. This configuration is used for final evaluation on the test set.
+
+---
+
