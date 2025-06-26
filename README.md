@@ -1,7 +1,7 @@
-# PrivyML-
+## PrivyML-
 
 
-## Logistic Regression
+# Logistic Regression
 
 | Metric        | Class 0 (denied) | Class 1 (approved) | Overall      |
 | ------------- | ---------------- | ------------------ | ------------ |
@@ -17,3 +17,18 @@
 
 -🔺 High overall accuracy is misleading here due to class imbalance (6175 vs 379)
 
+---
+
+# Decision Trees
+
+| Metric           | Class 0 (Denied) | Class 1 (Approved) | Comments                                         |
+| ---------------- | ---------------- | ------------------ | ------------------------------------------------ |
+| **Precision**    | 0.66 ✅           | 0.98 ✅             | Much better than Logistic Regression for Class 0 |
+| **Recall**       | 0.66 ✅           | 0.98 ✅             | Class 0 recall stayed high                       |
+| **F1-score**     | 0.66 ✅           | 0.98 ✅             | Class 0 is balanced now                          |
+| **Accuracy**     | 0.9606 ✅         |                    | Better than before!                              |
+| **Macro Avg**    | 0.82             |                    | Tells us both classes are treated fairly         |
+| **Weighted Avg** | 0.96             |                    | Considers class imbalance; still very high       |
+
+### 🧠 Summary
+-> The decision tree is now able to understand the patterns behind who should be denied access just as well as it does for approvals, and it does so without being unfairly biased toward approvals. It’s smarter and more balanced.
