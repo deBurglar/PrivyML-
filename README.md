@@ -36,14 +36,14 @@
 ---
 
 # XGBoost
+Accuracy: 0.9711626487641135
 
-| Model                            | Class 0 Recall | Class 0 Precision | Accuracy    | Remarks                               |
-| -------------------------------- | -------------- | ----------------- | ----------- | ------------------------------------- |
-| Logistic Regression (no weights) | 0.29 ❌         | 0.63              | 94.9%       | Ignored rare class                    |
-| Logistic (balanced)              | 0.89 ✅         | 0.38 ❗️           | 90.8%       | Caught more Class 0, but less precise |
-| Decision Tree                    | 0.66 ✅         | 0.66 ✅            | 96.0%       | Good balance                          |
-| **XGBoost**                      | **0.70 ✅**     | **0.78 ✅**        | **97.1% ✅** | Best performance so far               |
+Classification Report:
+               precision    recall  f1-score   support
 
-### ✅ Key Takeaways from Model Comparison:
+           0       0.78      0.70      0.74       379
+           1       0.98      0.99      0.98      6175
 
-**XGBoost outperforms all** models with the best balance between accuracy and rare class (Class 0) detection — making it ideal for production.
+    accuracy                           0.97      6554
+   macro avg       0.88      0.84      0.86      6554
+weighted avg       0.97      0.97      0.97      6554
