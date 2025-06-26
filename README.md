@@ -32,3 +32,18 @@
 
 ### 🧠 Summary
 -> The decision tree is now able to understand the patterns behind who should be denied access just as well as it does for approvals, and it does so without being unfairly biased toward approvals. It’s smarter and more balanced.
+
+---
+
+# XGBoost
+
+| Model                            | Class 0 Recall | Class 0 Precision | Accuracy    | Remarks                               |
+| -------------------------------- | -------------- | ----------------- | ----------- | ------------------------------------- |
+| Logistic Regression (no weights) | 0.29 ❌         | 0.63              | 94.9%       | Ignored rare class                    |
+| Logistic (balanced)              | 0.89 ✅         | 0.38 ❗️           | 90.8%       | Caught more Class 0, but less precise |
+| Decision Tree                    | 0.66 ✅         | 0.66 ✅            | 96.0%       | Good balance                          |
+| **XGBoost**                      | **0.70 ✅**     | **0.78 ✅**        | **97.1% ✅** | Best performance so far               |
+
+### ✅ Key Takeaways from Model Comparison:
+
+**XGBoost outperforms all** models with the best balance between accuracy and rare class (Class 0) detection — making it ideal for production.
