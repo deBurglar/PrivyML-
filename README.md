@@ -130,4 +130,22 @@ We tuned a Decision Tree classifier using cross-validation to find the best-perf
 ---
 
 
+## ⚡ XGBoost - Hyperparameter Tuning Summary
+
+We used **RandomizedSearchCV** to optimize XGBoost hyperparameters efficiently.
+
+### 🛠 Tuning Configuration:
+
+* **Search Method**: `RandomizedSearchCV`
+* **Candidates Tried**: 20 random hyperparameter combinations
+* **Cross-Validation Folds**: 5-fold
+* **Total Fits**: 20 × 5 = **100 model runs**
+
+### 🔍 Why This Matters:
+
+* RandomizedSearchCV helps explore a wide range of parameter combinations **faster than GridSearch**.
+* 5-fold cross-validation ensures each setting is **reliably tested** on multiple slices of the data.
+* This process helps find a robust and high-performing model without overfitting.
+
+---
 
