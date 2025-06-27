@@ -1,6 +1,26 @@
 ## PrivyML-
 
 
+---
+
+## 📌 Problem Statement
+
+In many large organizations like Amazon, employees frequently request access to internal resources (tools, data, services). Approving or denying such access manually can be slow, inconsistent, and prone to human error.
+
+The **goal** of this project is to **predict whether an employee should be granted access to a requested resource** based on historical access patterns. Using machine learning models, we aim to automate the decision process to improve speed, consistency, and security.
+
+### 💡 Why This Matters:
+
+* 🚫 Prevent unauthorized access to sensitive systems
+* ✅ Ensure fast approvals for legitimate requests
+* 🔁 Reduce workload on access control teams
+* 📊 Leverage patterns in manager behavior, roles, departments, and resources to make predictions
+
+---
+
+
+
+
 # Logistic Regression
 
 | Metric        | Class 0 (denied) | Class 1 (approved) | Overall      |
