@@ -19,6 +19,39 @@ The **goal** of this project is to **predict whether an employee should be grant
 ---
 
 
+## 💾 Dataset Description
+
+The dataset comes from the **[Amazon Employee Access Challenge](https://www.kaggle.com/competitions/amazon-employee-access-challenge)** on Kaggle. It contains **historical records of access requests** made by Amazon employees and whether they were **approved or denied**.
+
+Each row represents one access request made by an employee.
+
+### 📐 Features:
+
+| Column Name  | Description                                                       |
+| ------------ | ----------------------------------------------------------------- |
+| `resource`   | ID of the internal resource being requested                       |
+| `mgr_id`     | Unique ID of the manager associated with the employee             |
+| `role_id`    | ID of the employee’s role                                         |
+| `role_title` | Title of the role (e.g., Engineer, Analyst)                       |
+| `role_code`  | Internal code for the employee’s role                             |
+| `dept`       | Department to which the employee belongs (e.g., Finance, Sales)   |
+| `event_code` | Encodes the nature of the access request event                    |
+| `group`      | ID of the security group involved                                 |
+| `target`     | **Label** — whether the access was approved (`1`) or denied (`0`) |
+
+> 🧪 **Note:** The dataset is anonymized, and categorical values are encoded as integers or codes.
+
+### ⚠️ Class Imbalance:
+
+* Class `1` (Approved): \~94%
+* Class `0` (Denied): \~6%
+
+This imbalance makes **recall for Class 0 (denied requests)** a critical metric in model evaluation.
+
+---
+
+
+
 
 
 # Logistic Regression
